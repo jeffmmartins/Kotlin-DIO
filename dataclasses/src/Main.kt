@@ -1,6 +1,6 @@
 import javax.print.attribute.standard.MediaSize.Other
 
-//classe dataclasse faz com que o tostring já venha bem montado, importante para transportar os dados
+//classe dataclasse faz com que o to string já venha bem montado, importante para transportar os dados
 data class User(val name: String, val id: Int){
     override fun equals(other: Any?)=
         other is User && other.id == this.id
