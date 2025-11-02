@@ -6,6 +6,7 @@ fun main() {
 
     fun getNullableLength (ns: String?){
         println("For \"$ns\ ":")
+        //Função de escopo
         ns?.run{
             println("\tis empty?" + isEmpty())
         }
