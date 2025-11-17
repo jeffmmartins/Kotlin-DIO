@@ -7,5 +7,6 @@ fun main() {
 
     println(upperCase1("Hello"));
     println(upperCase2("Hello"));
+    println(upperCase2("Casa"));
 
 }
