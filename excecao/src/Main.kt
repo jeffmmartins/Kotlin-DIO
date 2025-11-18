@@ -3,12 +3,23 @@
 fun main() {
     //Lançar exceção quando tem um fluxo inesperado um fluxo alternativo
     val a = 10
-    val b =  0
+    val b =  2
 
+    /*
     try {
         val divisao = a/b;
     } catch (e: Throwable){
         //mostra exatamente a mensagem
         println(e.message)
+    }
+    */
+    try {
+        val divisao = a/b;
+    } catch (e: ArithmeticException) {
+        println("Ocorreu um erro")
+    }catch (e: Throwable){
+        println(e.message)
+    }finally {
+        println("Finally executado")
     }
 }
